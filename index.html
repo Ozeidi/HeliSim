@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+ 
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+
+    <!-- <script src="js/Tree.js"></script> -->
+    <!-- <script src="js/ball.js"></script> -->
+    <script src="js/HeliSim1.js"></script>
+    <script src="js/sidebar.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+  </div>
+
+  <div id="main">
+    <h4>The  HeliSim Experiment</h4>
+    <button class="openbtn" onclick="openNav()">&#9776; Control Cockpit</button>
+
+
+  <!-- <div id="Canvas" class="Canvas"> </div> -->
+  <div id="Canvas1" class="Canvas1"> </div>
+  </body>
+
+<!-- 
+  ##############
+  CONTROL PANEL
+  ##############
+  
+ -->
+  <div id="mySidebar" class="sidebar" >
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div data-role="main" class="ui-content">
+ 
+      <h1 for="wingLength">Wing Length</h1>
+      <input type="radio" id="wingLong" name="wingLength" value="L" >
+      <label for="wingLong">Long</label><br>
+      <input type="radio" id="wingShort" name="wingLength" value="S" checked>
+      <label for="wingShort">Short</label><br>
+
+      <h1 for="bodyLength">Body Length</h1>
+      <input type="radio" id="Body_Long" name="bodyLength" value="L" >
+      <label for="Body_Long">Long</label><br>
+      <input type="radio" id="Body_Short" name="bodyLength" value="S" checked>
+      <label for="Body_Short">Short</label><br>
+
+      <h1 for="wingWidth">Wing Width</h1>
+      <input type="radio" id="Wing_Wide" name="wingWidth" value="L" >
+      <label for="Wing_Wide">Wide</label><br>
+      <input type="radio" id="Wing_Narrow" name="wingWidth" value="S" checked>
+      <label for="Wing_Narrow">Narrow</label><br>
+
+      <h1 for="Fins">Fins</h1>
+      <input type="radio" id="Fins_Y" name="Fins" value="Y" >
+      <label for="Fins_Y">Yes</label><br>
+      <input type="radio" id="Fins_N" name="Fins" value="N" checked>
+      <label for="Fins_N">No</label><br>
+
+      <h1 for="Nose">Nose Weight</h1>
+      <input type="radio" id="Nose_Y" name="Nose" value="Y" >
+      <label for="Nose_Y">Yes</label><br>
+      <input type="radio" id="Nose_N" name="Nose" value="N" checked>
+      <label for="Nose_N">No</label><br>
+
+
+
+
+
+    </div>
+
+  </div>
+<!-- 
+  ##############
+  ##############  
+ -->
+ <button id="Refresh" onclick="refresh()" style="background-color:rgb(77, 107, 20);color:white"> Run</button>
+
+<div align="center" class="heading" >
+  <p>Flight Time (sec):   </p>
+  
+  <p id='time'> 0.0</p>
+</div>
+
+  </div>
+
+  <!-- COLOR PICKER -->
+
+  <script src='https://cdn.jsdelivr.net/npm/@jaames/iro/dist/iro.min.js'></script>
+  <script src="js/ColorPicker.js"></script>
+
+</html>
